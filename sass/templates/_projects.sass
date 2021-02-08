@@ -1,0 +1,308 @@
+@import molecules/textos
+
+
+header
+	min-height: 400px
+	margin: 0 0 25px
+
+	background:
+		image: url('../imagens/slide_project.jpg')
+		position: top center
+		repeat: no-repeat
+		color: $preto
+
+	h1
+		margin-top: 115px !important
+
+	p
+		text-transform: capitalize
+		margin-top: 65px
+		+font-size(30px)
+
+.botao
+	display: table
+	margin: auto
+	clear: both
+
+.projects
+	ul
+		+clearfix
+		+make-row
+		margin-left: 6%
+
+		li
+			+make-sm-column(6)
+			+make-xs-column(6)
+			overflow: hidden
+			margin-bottom: 30px
+
+
+			figure
+				position: relative
+				background: $branco
+
+				&:hover
+					a
+						+opacity(1)
+					.overlay
+						top: 0
+
+				img
+					+img-responsive
+
+				figcaption
+					a
+						text-align: center
+						position: absolute
+						z-index: 2
+						color: $branco
+						width: 100%
+						top: 40%
+						+opacity(0)
+
+						h3
+							text-transform: uppercase
+							+font-size(24px)
+							margin: 0
+						p
+							+font-size(22px)
+						
+						+breakpoint($tablet)
+							h3
+								+font-size(22px)
+							p
+								+font-size(20px)
+
+						+breakpoint($celular)
+							h3
+								+font-size(16px)
+							p
+								+font-size(13px)
+
+
+					a,
+					.overlay
+						+transition(.3s)
+
+					.overlay
+						+gradient(60deg, $verde-claro,$amarelo)
+						+opacity(.8)
+						position: absolute
+						left: 0
+						top: 100%
+						z-index: 1
+						display: block
+						width: 100%
+						height: 100%
+
+				
+
+.projects
+	ul
+		.background
+			position: absolute
+			top: 0
+			left: 0
+			width: 100%
+			height: 100%
+			background-color: #000000
+			opacity: .0
+			-moz-opacity: .0
+			z-index: 100
+			display: none
+
+		.box
+			position: absolute
+			top: 20%
+			left: 20%
+			width: 650px
+			+gradient(0deg,$amarelo, $verde-claro)
+			z-index: 101
+			margin-right: 10px
+			margin-left: 10px
+			border-radius: 4px
+			-moz-border-radius: 4px
+			-webkit-border-radius: 4px
+			box-shadow: 2px 2px 2px #333333
+			-moz-box-shadow: 2px 2px 2px #333333
+			-webkit-box-shadow: 2px 2px 2px #333333
+			display: none
+
+			p
+				margin-top: 10px
+				padding: 20px
+				+font-size(30px)
+				text-align: justify
+				text-indent: 30px
+				line-height: 1.5
+
+		.boxs
+			position: absolute
+			top: 20%
+			left: 20%
+			width: 650px
+			+gradient(0deg,$amarelo, $verde-claro)
+			z-index: 101
+			margin-right: 10px
+			margin-left: 10px
+			border-radius: 4px
+			-moz-border-radius: 4px
+			-webkit-border-radius: 4px
+			box-shadow: 2px 2px 2px #333333
+			-moz-box-shadow: 2px 2px 2px #333333
+			-webkit-box-shadow: 2px 2px 2px #333333
+			display: none
+
+			p
+				margin-top: 10px
+				padding: 20px
+				+font-size(30px)
+				text-align: justify
+				text-indent: 30px
+				line-height: 1.5
+
+		.close
+			float: right
+			margin-right: 10px
+			cursor: pointer	
+
++breakpoint($tablet)
+	.projects
+		ul
+			.background
+				position: absolute
+				top: 0
+				left: 0
+				width: 100%
+				height: 100%
+				background-color: #000000
+				opacity: .0
+				-moz-opacity: .0
+				z-index: 100
+				display: none
+
+			.box
+				position: absolute
+				top: 10%
+				left: 10%
+				width: 80%
+				+gradient(0deg,$amarelo, $verde-claro)
+				z-index: 101
+				margin-right: 10px
+				margin-left: 10px
+				border-radius: 4px
+				-moz-border-radius: 4px
+				-webkit-border-radius: 4px
+				box-shadow: 2px 2px 2px #333333
+				-moz-box-shadow: 2px 2px 2px #333333
+				-webkit-box-shadow: 2px 2px 2px #333333
+				display: none
+
+				p
+					margin-top: 10px
+					padding: 20px
+					+font-size(25px)
+					text-align: justify
+					text-indent: 30px
+					line-height: 1.5
+
+			.boxs
+				position: absolute
+				top: 10%
+				left: 10%
+				width: 80%
+				+gradient(0deg,$amarelo, $verde-claro)
+				z-index: 101
+				margin-right: 10px
+				margin-left: 10px
+				border-radius: 4px
+				-moz-border-radius: 4px
+				-webkit-border-radius: 4px
+				box-shadow: 2px 2px 2px #333333
+				-moz-box-shadow: 2px 2px 2px #333333
+				-webkit-box-shadow: 2px 2px 2px #333333
+				display: none
+
+				p
+					margin-top: 10px
+					padding: 20px
+					+font-size(25px)
+					text-align: justify
+					text-indent: 30px
+					line-height: 1.5
+
+			.close
+				float: right
+				margin-right: 10px
+				cursor: pointer	
+
+
++breakpoint($celular)
+	.projects
+		ul
+			.background
+				position: absolute
+				top: 0
+				left: 0
+				width: 100%
+				height: 100%
+				background-color: #000000
+				opacity: .0
+				-moz-opacity: .0
+				z-index: 100
+				display: none
+
+			.box
+				position: absolute
+				top: 10%
+				left: 2%
+				width: 90%
+				+gradient(0deg,$amarelo, $verde-claro)
+				z-index: 101
+				margin-right: 10px
+				margin-left: 10px
+				border-radius: 4px
+				-moz-border-radius: 4px
+				-webkit-border-radius: 4px
+				box-shadow: 2px 2px 2px #333333
+				-moz-box-shadow: 2px 2px 2px #333333
+				-webkit-box-shadow: 2px 2px 2px #333333
+				display: none
+
+				p
+					margin-top: 10px
+					padding: 20px
+					+font-size(25px)
+					text-align: justify
+					text-indent: 30px
+					line-height: 1.5
+
+			.boxs
+				position: absolute
+				top: 10%
+				left: 2%
+				width: 90%
+				+gradient(0deg,$amarelo, $verde-claro)
+				z-index: 101
+				margin-right: 10px
+				margin-left: 10px
+				border-radius: 4px
+				-moz-border-radius: 4px
+				-webkit-border-radius: 4px
+				box-shadow: 2px 2px 2px #333333
+				-moz-box-shadow: 2px 2px 2px #333333
+				-webkit-box-shadow: 2px 2px 2px #333333
+				display: none
+
+				p
+					margin-top: 10px
+					padding: 20px
+					+font-size(25px)
+					text-align: justify
+					text-indent: 30px
+					line-height: 1.5
+
+			.close
+				float: right
+				margin-right: 10px
+				cursor: pointer	

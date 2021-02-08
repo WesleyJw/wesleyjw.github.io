@@ -1,0 +1,46 @@
+section.sobre
+	.itens
+		+flexbox
+		+align-items(center)
+		+justify-content(space-around)
+		margin: 50px 0
+		text-align: center
+
+		+breakpoint($tablet)
+			display: block
+
+
+		.foto
+			+order(3)
+			+breakpoint($tablet)
+				margin: 0 0 30px
+
+		[class^="icone-"]
+			width: 90px
+			height: 90px
+			background-color: $verde-claro2
+			+border-radius(120px)
+			text-align: center
+			line-height: 85px
+			color: $branco
+			+font-size(60px)
+			
+			+breakpoint($tablet)
+				display: inline-block
+				width: 70px
+				height: 70px
+				line-height: 70px
+				+font-size(55px)
+				margin: 0 3px
+
+			&.icone-university
+				+order(1)
+
+			&.icone-line
+				+order(2)
+
+			&.icone-database
+				+order(4)
+
+			&.icone-codigo
+				+order(5)

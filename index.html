@@ -1,0 +1,117 @@
+﻿<!DOCTYPE html>
+<html lang="pt-br">
+  	<head>
+    	<meta charset="utf-8">
+    	<title>Dr. Wesley Lima</title>
+    	<meta name="viewport" content="width=device-width, initial-scale=1">
+    	<link rel="stylesheet" href="css/home.css">	
+    	<link rel="stylesheet" type="text/css" href="css/geral.css">
+    	<link rel="stylesheet" href="bower_components/wow/css/libs/animate.css">
+    	<link rel="stylesheet" href="css/plugins.css">
+  	</head>
+ 	<body>
+		<nav class="menu-responsivo">
+			<ul>
+				<li><a href="index.html">Home</a></li>
+				<li><a href="sobre.html">Sobre</a></li>
+				<li><a href="projects.html">Projetos</a></li>
+				<li><a href="papers.html">Artigos</a></li>
+				<li><a href="contato.html">Contato</a></li>
+			</ul>
+		</nav>
+
+	  	<div class="layout">
+			<header>
+				<div class="container">
+					<div class="logo wow slideInLeft" data-wow-duration="1s" data-wow-delay=".5s">
+						<a href="index.html">
+						<img src="imagens/logo_new_topo.svg" alt="Logo Topo">
+						</a>
+					</div>
+					<div class="links wow fadeInDown" data-wow-duration="1s" data-wow-delay="1s">
+						<nav>
+							<ul>
+								<li><a href="index.html">Home</a></li>
+								<li><a href="sobre.html">Sobre</a></li>
+								<li><a href="projects.html">Projetos</a></li>
+								<li><a href="papers.html">Artigos</a></li>
+								<li><a href="contato.html">Contato</a></li>
+							</ul>
+						</nav>
+						<div class="menu-geral">
+							<ul>
+								<li>
+									<a class="toggle" href="javascript:;">
+										<span></span>
+										<span></span>
+										<span></span>
+										<i class="fa fa-times" id="close"></i>
+									</a>
+								</li>	
+							</ul>
+						</div>
+
+					</div>
+					<h1><strong>Dr. Wesley Lima</strong></h1>
+					<p>Statistics // Modeling // Machine Learning</p>
+				</div>
+			</header>
+			<main>
+				<section class="sobre">
+					<div class="container">
+						<div class="itens">
+							<div class="foto wow flipInX" data-wow-duration="1s" data-wow-delay="3s">
+								<img src="imagens/logo_miolo.png" alt="Foto Pessoal">
+							</div>
+							<div class="icone-university wow slideInLeft" data-wow-duration="1s" data-wow-delay="0.1s">
+								<i class="fa fa-university"></i>
+							</div>
+							<div class="icone-line wow flipInX" data-wow-duration="1s" data-wow-delay="2s">
+								<i class="fa fa-line-chart"></i>
+							</div>
+							<div class="icone-database wow flipInX" data-wow-duration="1s" data-wow-delay="2s">
+								<i class="fa fa-database"></i>
+							</div>
+							<div class="icone-codigo wow slideInRight" data-wow-offset="1"  data-wow-iteration="1s">
+								<i class="fa fa-code"></i>
+							</div>
+						</div>
+						<div class="textos">
+							<p><strong>Doutor em Biometria e Estatística Aplicada</strong> pela Universidade Federal Rural de Pernambuco e <strong>Bacharel em Ciências Biológicas</strong> formado pela Universidade Federal Rural de Pernambuco/Unidade Acadêmica de Serra Talhada. Tem experiência nas áreas de Estatística experimental, Modelagem (modelos lineares, modelos lineares generalizados, modelos não lineares, modelos lineares e não lineares mistos, modelos baseados em processos, modelos epidemiológicos e ecofisiológicos), Séries temporais, Machine learning (Redes neurais artificiais, máquinas de vetores de suporte, árvores de decisão, random forest, KNN), Big Data, entre outras. Com habilidades em Webscraping, produção de mapas estáticos e dinâmicos em R, nas linguagens de programação R, Python e C, no ecossistema Hadoop e em Spark. Já ministrou aulas em Pós graduação, graduação e EAD. Também ministra cursos de Estatística, R, Python, Big Data, Machine Learning, bem como, presta consultorias de Estatística e Ciência de Dados.</p>
+
+							<a href="sobre.html" class="botao medio"><i class="fa fa-eye"></i>  Continue lendo</a>
+						</div>
+					</div>
+				</section>
+			</main>
+			<footer>
+				<div class="logo-rodape">
+					<a href="index.html">
+						<img src="imagens/logo_rodape_new.svg" alt="Logo Rodape">
+					</a>
+					<p>Copyrigth &copy 2017 - by Wesley Lima</p>
+				</div>
+				<div class="redes_sociais">
+					<ul class="redes">
+				    <li><a href="http://twitter.com/@wesleyJWLS" target="_blank"> <i class="fa fa-twitter-square"></i></a></li>
+				    <li><a href="https://github.com/wesleyjw" target="_blank"> <i class="fa fa-github"></i></a></li>
+				    <li><a href="https://www.linkedin.com/in/wesley-lima-b68935a8/" target="_blank"><i class="fa fa-linkedin-square"></i></a></li>
+				</ul>
+				</div>
+				
+			</footer>
+		</div>
+		<script src="bower_components/jquery/dist/jquery.min.js"></script>
+		<script src="bower_components/wow/dist/wow.min.js"></script>
+		<script>
+			$(function(){
+				$('.toggle').click(function(){
+					$('.layout').toggleClass('ativo');
+					$('.menu-responsivo').toggleClass('ativo');
+					$(this).toggleClass('ativo');
+				});
+				new WOW().init();
+			});
+		</script>
+  </body>
+</html>

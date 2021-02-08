@@ -1,0 +1,57 @@
+.projects
+	ul
+		+clearfix
+		+make-row
+		margin-left: 6%
+
+		li
+			+make-sm-column(6)
+			+make-xs-column(6)
+			overflow: hidden
+			margin-bottom: 40px
+			margin-top: 40px
+
+
+			figure
+				position: relative
+				background: $branco
+
+				&:hover
+					a
+						+opacity(1)
+					.overlay
+						top: 0
+
+				img
+					+img-responsive
+
+				figcaption
+					a
+						text-align: center
+						position: absolute
+						z-index: 2
+						color: $branco
+						width: 100%
+						top: 40%
+						+opacity(0)
+
+						h3
+							+font-size(24px)
+							margin: 0
+							text-transform: uppercase
+						p
+							+font-size(22px)
+					a,
+					.overlay
+						+transition(.3s)
+
+					.overlay
+						+gradient(60deg, $verde-claro,$amarelo)
+						+opacity(.8)
+						position: absolute
+						left: 0
+						top: 100%
+						z-index: 1
+						display: block
+						width: 100%
+						height: 100%

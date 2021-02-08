@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  	<head>
+    	<meta charset="utf-8">
+    	<title>Wesley Lima</title>
+    	<meta name="viewport" content="width=device-width, initial-scale=1">	
+    	<link rel="stylesheet" type="text/css" href="css/geral.css">
+    	<link rel="stylesheet" href="bower_components/wow/css/libs/animate.css">
+    	<link rel="stylesheet" href="css/plugins.css">
+    	<link rel="stylesheet" href="css/projects.css">
+  	</head>
+  	<body>
+  		<nav class="menu-responsivo">
+			<ul>
+				<li><a href="index.html">Home</a></li>
+				<li><a href="sobre.html">Sobre</a></li>
+				<li><a href="projects.html">Projetos</a></li>
+				<li><a href="papers.html">Artigos</a></li>
+				<li><a href="contato.html">Contato</a></li>
+			</ul>
+		</nav>
+  		<div class="layout">
+			<header>
+				<div class="container">
+					<div class="logo wow slideInLeft" data-wow-duration="1s" data-wow-delay=".5s">
+						<a href="index.html">
+						<img src="imagens/logo_new_topo.svg" alt="Logo Topo">
+						</a>
+					</div>
+					<div class="links wow fadeInDown" data-wow-duration="1s" data-wow-delay="1s">
+						<nav>
+							<ul>
+								<li><a href="index.html">Home</a></li>
+								<li><a href="sobre.html">Sobre</a></li>
+								<li><a href="projects.html">Projetos</a></li>
+								<li><a href="papers.html">Artigos</a></li>
+								<li><a href="contato.html">Contato</a></li>
+							</ul>
+						</nav>
+						<div class="menu-geral">
+							<ul>
+								<li>
+									<a class="toggle" href="javascript:;">
+										<span></span>
+										<span></span>
+										<span></span>
+										<i class="fa fa-times" id="close"></i>
+									</a>
+								</li>	
+							</ul>
+						</div>
+					</div>
+					<h1><strong> Projetos</strong></h1>
+					<p>A ciência de hoje é a tecnologia de amanhã!</p>
+				</div>
+			</header>
+			<main>
+				<section class="projects">
+					<div class="container">
+						<ul>
+							<li>
+								<figure class="imghvr-zoom-out-up">
+									<img src="imagens/datascience.jpg" alt="Fot Data Science">
+									<figcaption>
+										<a href="#" class="lightbox">
+											<h3>Projeto</h3>
+											<p>Data Science</p>
+										</a>
+										<div class="overlay"></div>
+									</figcaption>
+								</figure>
+							</li>
+							<div class="background"></div>
+							<div class="box"><div class="close"><i class="fa fa-close"></i></div><p> A Ciência de Dados se desenvolve cada vez mais ao londo dos anos. Linguagens de programção como <i>R</i> e <i>Python</i> permitem o acesso a dados de forma prática e com alta precisão, e possuem um grande número de pacotes e módulos para trabalhar estes dados. O objetivo deste projeto é construir algoritmos para buscar dados de preço de mercado em sites especfícos. Posteriomente será realizada uma análise com diversos algoritmos clássicos e inteligente de regressão, classificação e agrupamento. "Você pode acompanhar o desenvolvimento deste projeto no meu repositório do<a href="https://github.com/wesleyjw" target="_blank"><i class="fa fa-github"></i></a>"</p></div>
+							<li>
+								<figure class="imghvr-zoom-out-down">
+									<img src="imagens/floresta.jpg" alt="Foto Floresta">
+									<figcaption>
+										<a href="#" class="lb">
+											<h3>Projeto</h3>
+											<p>Modelagem Florestal com Variáveis Ambientais e Machine Learning</p>
+										</a>
+										<div class="overlay"></div>
+									</figcaption>
+								</figure>
+							</li>
+							<div class="background"></div>
+							<div class="boxs"><div class="close"><i class="fa fa-close"></i></div><p > O manejo florestal é de fundamental importância para o desenvolvimento sustentável e econômico de uma floresta. Atualmente, os eforços se concentram no desenvolvimento de modelos mais eficientes. A adição de variáveis ambientais nestes modelos é uma solução interessante. Um outro viés, é o uso de técnicas da computação inteligente. A combinação desses métodos pode gerar uma importante ferramenta para estimar o crecimento e o volume de espécies florestais.</p></div>
+						</ul>
+
+					</div>
+
+				</section>
+					
+				<a href="papers.html" class="botao medio"><i class="fa fa-newspaper-o"></i>  Artigos</a>
+			</main>
+			<footer>
+				<div class="logo-rodape">
+					<a href="index.html">
+						<img src="imagens/logo_rodape_new.svg" alt="Logo Rodape">
+					</a>
+					<p>Copyrigth &copy 2017 - by Wesley Lima</p>
+				</div>
+				<div class="redes_sociais">
+					<ul class="redes">
+				    <li><a href="http://twitter.com/@wesleyJWLS" target="_blank"> <i class="fa fa-twitter-square"></i></a></li>
+				    <li><a href="https://github.com/wesleyjw" target="_blank"> <i class="fa fa-github"></i></a></li>
+				    <li><a href="https://www.linkedin.com/in/wesley-lima-b68935a8/" target="_blank"><i class="fa fa-linkedin-square"></i></a></li>
+				</ul>
+				</div>		
+			</footer>
+		</div>
+		<script src="bower_components/jquery/dist/jquery.min.js"></script>
+		<script src="bower_components/wow/dist/wow.min.js"></script>
+		<script>
+			$(document).ready(function(){
+				$('.toggle').click(function(){
+					$('.layout').toggleClass('ativo');
+					$('.menu-responsivo').toggleClass('ativo');
+					$(this).toggleClass('ativo');
+				});
+
+				$('.lightbox').click(function(){
+					$('.background, .box').animate({'opacity':'.60'}, 500, 'linear');
+					$('.box').animate({'opacity':'1.00'}, 500, 'linear');
+					$('.background, .box').css('display','block');			
+				});
+
+				$('.close').click(function(){
+					$('.background, .box').animate({'opacity':'0'}, 500, 'linear', function(){
+						$('.background, .box').css('display','none');
+					});	
+				});
+
+				$('.background').click(function(){
+					$('.background, .box').animate({'opacity':'0'}, 500, 'linear', function(){
+						$('.background, .box').css('display','none');
+					});	
+				});
+
+				$('.lb').click(function(){
+					$('.background, .boxs').animate({'opacity':'.60'}, 500, 'linear');
+					$('.boxs').animate({'opacity':'1.00'}, 500, 'linear');
+					$('.background, .boxs').css('display','block');			
+				});
+
+				$('.close').click(function(){
+					$('.background, .boxs').animate({'opacity':'0'}, 500, 'linear', function(){
+						$('.background, .boxs').css('display','none');
+					});	
+				});
+
+				$('.background').click(function(){
+					$('.background, .boxs').animate({'opacity':'0'}, 500, 'linear', function(){
+						$('.background, .boxs').css('display','none');
+					});	
+				});
+				
+				new WOW().init();
+			});
+		</script>
+  	</body>
+</html>

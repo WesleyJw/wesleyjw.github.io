@@ -1,0 +1,38 @@
+footer
+	+gradient(0deg, $verde-claro, transparent)
+	padding: 12px
+	p
+		text-align: center
+	.logo-rodape
+		img
+			width: 176px
+			height: 175px
+			display: block
+			margin: 15px auto
+			
+			+breakpoint($celular)
+				width: 156px
+				height: 155px
+
+	.redes_sociais
+		display: table
+		float: right
+		margin-top: -220px
+		padding: 0px 10% 0px
+		+font-size(80px)
+		
+		+breakpoint($tablet)
+			+font-size(70px)
+
+		+breakpoint($celular)
+			+font-size(60px)
+			padding: 0px 5% 0px
+			margin-top: -200px
+
+
+		ul
+			a
+				text-decoration: none
+				color: $preto
+			li
+				padding: 1px

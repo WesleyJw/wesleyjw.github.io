@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+	<head>
+    	<meta charset="utf-8">
+    	<title>Wesley Lima</title>
+    	<meta name="viewport" content="width=device-width, initial-scale=1">
+    	<link rel="stylesheet" type="text/css" href="css/geral.css">
+    	<link rel="stylesheet" href="bower_components/wow/css/libs/animate.css">
+    	<link rel="stylesheet" href="css/plugins.css">
+    	<link rel="stylesheet" href="css/contato.css">	
+  	</head>
+  	<body>
+  		<nav class="menu-responsivo">
+			<ul>
+				<li><a href="index.html">Home</a></li>
+				<li><a href="sobre.html">Sobre</a></li>
+				<li><a href="projects.html">Projetos</a></li>
+				<li><a href="papers.html">Artigos</a></li>
+				<li><a href="contato.html">Contato</a></li>
+			</ul>
+		</nav>
+		<div class="layout">
+			<header>
+				<div class="container">
+					<div class="logo wow slideInLeft" data-wow-duration="1s" data-wow-delay=".5s">
+						<a href="index.html">
+						<img src="imagens/logo_new_topo.svg" alt="Logo Topo">
+						</a>
+					</div>
+					<div class="links wow fadeInDown" data-wow-duration="1s" data-wow-delay="1s">
+						<nav>
+							<ul>
+								<li><a href="index.html">Home</a></li>
+								<li><a href="sobre.html">Sobre</a></li>
+								<li><a href="projects.html">Projetos</a></li>
+								<li><a href="papers.html">Artigos</a></li>
+								<li><a href="contato.html">Contato</a></li>
+							</ul>
+						</nav>
+						<div class="menu-geral">
+							<ul>
+								<li>
+									<a class="toggle" href="javascript:;">
+										<span></span>
+										<span></span>
+										<span></span>
+										<i class="fa fa-times" id="close"></i>
+									</a>
+								</li>	
+							</ul>
+						</div>
+					</div>
+					<h1><strong>Fale Comigo</strong></h1>
+					<p>Onde estou...</p>
+				</div>
+			</header>
+			<main>
+				<section class="projects">
+					<div class="container">
+						<ul>
+							<li>
+								<figure class="imghvr-zoom-out-up">
+									<img src="imagens/researchgate.jpg" alt="Foto ResearchGate">
+									<figcaption>
+										<a href="https://www.researchgate.net/profile/Jose_Silva211" target="_blank">
+											<h3>Research Gate</h3>
+											<p>Rede Social Acadêmica</p>
+										</a>
+										<div class="overlay"></div>
+									</figcaption>
+								</figure>
+							</li>
+							<li>
+								<figure class="imghvr-zoom-out-down">
+									<img src="imagens/lattes.jpg" alt="Foto Currículo Lattes">
+									<figcaption>
+										<a href="http://buscatextual.cnpq.br/buscatextual/visualizacv.do?id=K4443620E6" target="_blank">
+											<h3>Plataforma Lattes</h3>
+											<p>Currículo Lattes</p>
+										</a>
+										<div class="overlay"></div>
+									</figcaption>
+								</figure>
+							</li>
+							<li>
+								<figure class="imghvr-zoom-out-up">
+									<img src="imagens/github_two.jpg" alt="Foto GitHub">
+									<figcaption>
+										<a href="https://github.com/wesleyjw" target="_blank">
+											<h3>GitHub</h3>
+											<p>Repositório de Arquivos</p>
+										</a>
+										<div class="overlay"></div>
+									</figcaption>
+								</figure>
+							</li>
+							<li>
+								<figure class="imghvr-zoom-out-down">
+									<img src="imagens/contato.jpg" alt="Foto Email">
+									<figcaption>
+										<a href="contato.html">
+											<h3>Email</h3>
+											<p>jwesleybiologo@gmail.com</p>
+										</a>
+										<div class="overlay"></div>
+									</figcaption>
+								</figure>
+							</li>
+						</ul>
+						<a href="index.html" class="botao medio"><i class="fa fa-home"></i>  Início</a>
+					</div>
+				</section>
+			</main>
+			<footer>
+				<div class="logo-rodape">
+					<a href="index.html">
+						<img src="imagens/logo_rodape_new.svg" alt="Logo Rodape">
+					</a>
+					<p>Copyrigth &copy 2017 - by Wesley Lima</p>
+				</div>
+				<div class="redes_sociais">
+					<ul class="redes">
+				    <li><a href="http://twitter.com/@wesleyJWLS" target="_blank"> <i class="fa fa-twitter-square"></i></a></li>
+				    <li><a href="https://github.com/wesleyjw" target="_blank"> <i class="fa fa-github"></i></a></li>
+				    <li><a href="https://www.linkedin.com/in/wesley-lima-b68935a8/" target="_blank"><i class="fa fa-linkedin-square"></i></a></li>
+				</ul>
+				</div>
+				
+			</footer>
+		</div>
+		<script src="bower_components/jquery/dist/jquery.min.js"></script>
+		<script src="bower_components/wow/dist/wow.min.js"></script>
+		<script>
+			$(function(){
+				$('.toggle').click(function(){
+					$('.layout').toggleClass('ativo');
+					$('.menu-responsivo').toggleClass('ativo');
+					$(this).toggleClass('ativo');
+				});
+				new WOW().init();
+			});
+		</script>
+  	</body>
+</html>
