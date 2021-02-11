@@ -1242,6 +1242,18 @@ header p {
 
 }
 
+@media only screen and (min-width: 380px) and (max-width: 467px)  {
+	.projects ul li figure figcaption a h3 {
+		font-size: 8px;
+	}
+
+	.projects ul li figure figcaption a p {
+		font-size: 7px;
+	}
+
+}
+
+
 .projects ul li figure figcaption a, .projects ul li figure figcaption .overlay {
 	-webkit-transition: .3s;
 	transition: .3s
