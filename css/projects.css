@@ -1181,8 +1181,8 @@ header p {
 	}
 
 	.imghvr-zoom-in figcaption {
-		-webkit-transform: scale(.8);
-		transform: scale(.8);
+		-webkit-transform: scale(1);
+		transform: scale(1);
 		opacity: .9;
 		top: 45%;
 		height: 55%;
@@ -1207,7 +1207,7 @@ header p {
 	.imghvr-zoom-in figcaption a {
 		opacity: 1;
 		filter: alpha(opacity=100);
-		-webkit-transform: scale(.6);
+		-webkit-transform: scale(.5);
 		position: absolute;
 	}
 
@@ -1215,8 +1215,8 @@ header p {
 		-webkit-transform: scale(1);
 		transform: scale(1);
 		opacity: .9;
-		top: 45%;
-		height: 55%;
+		top: 40%;
+		height: 60%;
 		background-color: #d1f153;
 		background-image: -webkit-gradient(linear, 60deg, from(#64f044), to(#d1f153));
 		background-image: -webkit-linear-gradient(60deg, #64f044, #d1f153);
