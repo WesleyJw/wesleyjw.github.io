@@ -1233,22 +1233,22 @@ header p {
 
 @media only screen and (min-width: 480px) and (max-width: 767px)  {
 	.projects ul li figure figcaption a h3 {
-		font-size: 8px;
+		font-size: 7px;
 	}
 
 	.projects ul li figure figcaption a p {
-		font-size: 7px;
+		font-size: 6px;
 	}
 
 }
 
 @media only screen and (min-width: 280px) and (max-width: 467px)  {
 	.projects ul li figure figcaption a h3 {
-		font-size: 7px;
+		font-size: 6px;
 	}
 
 	.projects ul li figure figcaption a p {
-		font-size: 6px;
+		font-size: 5px;
 	}
 
 }
