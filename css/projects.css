@@ -1181,8 +1181,8 @@ header p {
 	}
 
 	.imghvr-zoom-in figcaption {
-		-webkit-transform: scale(1);
-		transform: scale(1);
+		-webkit-transform: scale(.8);
+		transform: scale(.8);
 		opacity: .9;
 		top: 45%;
 		height: 55%;
@@ -1259,7 +1259,7 @@ header p {
 	z-index: 2;
 	color: black;
 	width: 100%;
-	top: 10%;
+	top: 5%;
 	opacity: 1;
 	filter: alpha(opacity=100)
 }
