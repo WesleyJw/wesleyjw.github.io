@@ -1134,10 +1134,10 @@ header p {
 	margin-top: 30px
 }
 
-@media (min-width:768px) {
+@media (max-width:768px) {
 	.projects ul li {
 		float: left;
-		width: 33%
+		width: 50%
 	}
 
 }
@@ -1233,24 +1233,23 @@ header p {
 
 @media only screen and (min-width: 480px) and (max-width: 767px)  {
 	.projects ul li figure figcaption a h3 {
-		font-size: 7px;
+		font-size: 10px;
 	}
 
 	.projects ul li figure figcaption a p {
-		font-size: 6px;
+		font-size: 9px;
 	}
 
 }
 
 @media only screen and (min-width: 280px) and (max-width: 467px)  {
 	.projects ul li figure figcaption a h3 {
-		font-size: 6px;
+		font-size: 9px;
 	}
 
 	.projects ul li figure figcaption a p {
-		font-size: 5px;
+		font-size: 8px;
 	}
-
 }
 
 
@@ -1268,7 +1267,7 @@ header p {
 	background-image: -o-linear-gradient(60deg, #64f044, #d1f153);
 	background-image: linear-gradient(60deg, #64f044, #d1f153);
 	filter: progid:DXImageTransform.Microsoft.gradient(GradientType=$angle, StartColorStr='#64f044', EndColorStr='#d1f153');
-	opacity: ..9;
+	opacity: .9;
 	filter: alpha(opacity=90);
 	position: absolute;
 	left: 0;
