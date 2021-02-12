@@ -397,14 +397,14 @@ footer .descricao-nome {
 
 @media (max-width:740px){
 	footer .descricao-nome {
-		font-family: 'Beautiful Kisses', cursive !important;
+		font-family: 'Tangerine', cursive !important;
 		font-size: 22px;
 	}
 }
 
 @media (max-width:540px){
 	footer .descricao-nome {
-		font-family: 'Beautiful Kisses', cursive !important;
+		font-family: 'Tangerine', cursive !important;
 		font-size: 17px;
 	}
 }
