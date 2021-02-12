@@ -390,8 +390,7 @@ footer p {
 
 @font-face {
 	font-family: 'Beautiful Kisses';
-	src: local("Beautiful Kisses"), url('https://github.com/WesleyJw/wesleyjw.github.io/blob/master/fonts/BeautifulKisses.ttf?raw=true');
-	src: local("Beautiful Kisses"), url('blob/master/fonts/BeautifulKisses.ttf?raw=true');
+	src: local("Beautiful Kisses"), url('fonts/BeautifulKisses.ttf');
 }
 
 footer .descricao-nome {
