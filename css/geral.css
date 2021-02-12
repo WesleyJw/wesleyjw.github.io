@@ -388,20 +388,25 @@ footer p {
 	color: black;
 }
 
-footer .descricao {
+@font-face .descricao-nome {
+	font-family: 'Beautiful Kisses';
+	src: local("Beautiful Kisses"), url('https://github.com/WesleyJw/wesleyjw.github.io/blob/master/fonts/Beautiful%20Kisses.ttf');
+}
+
+footer .descricao-nome {
 	font-family: 'Beautiful Kisses', cursive !important;
 	font-size: 30px;
 }
 
 @media (max-width:740px){
-	footer .descricao {
+	footer .descricao-nome {
 		font-family: 'Beautiful Kisses', cursive !important;
 		font-size: 22px;
 	}
 }
 
 @media (max-width:540px){
-	footer .descricao {
+	footer .descricao-nome {
 		font-family: 'Beautiful Kisses', cursive !important;
 		font-size: 17px;
 	}
