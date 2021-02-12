@@ -388,7 +388,7 @@ footer p {
 	color: black;
 }
 
-@font-face .descricao-nome {
+@font-face {
 	font-family: 'Beautiful Kisses';
 	src: local("Beautiful Kisses"), url('https://github.com/WesleyJw/wesleyjw.github.io/blob/master/fonts/Beautiful%20Kisses.ttf');
 }
