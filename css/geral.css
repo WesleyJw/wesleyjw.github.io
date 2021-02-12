@@ -398,14 +398,14 @@ footer .descricao-nome {
 @media (max-width:740px){
 	footer .descricao-nome {
 		font-family: 'Tangerine', cursive !important;
-		font-size: 22px;
+		font-size: 35px;
 	}
 }
 
 @media (max-width:540px){
 	footer .descricao-nome {
 		font-family: 'Tangerine', cursive !important;
-		font-size: 17px;
+		font-size: 27px;
 	}
 }
 
@@ -416,7 +416,7 @@ footer .titulacao {
 }
 
 footer .titulacao p {
-	margin-top: -30px;
+	margin-top: -20px;
 }
 
 
@@ -430,7 +430,7 @@ footer .titulacao p {
 @media (max-width:540px){
 	footer .titulacao {
 		font-family: 'Courier New', cursive !important;
-		font-size: 9px;
+		font-size: 10px;
 	}
 }
 
