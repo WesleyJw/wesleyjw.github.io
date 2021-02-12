@@ -388,14 +388,11 @@ footer p {
 	color: black;
 }
 
-@font-face {
-	font-family: 'Beautiful Kisses';
-	src: local("Beautiful Kisses"), url('fonts/BeautifulKisses.ttf');
-}
-
 footer .descricao-nome {
-	font-family: 'Beautiful Kisses', cursive !important;
-	font-size: 30px;
+	font-family: 'Tangerine', cursive !important;
+	font-size: 55px;
+	margin-top: 0;
+	margin-bottom: -10px;
 }
 
 @media (max-width:740px){
@@ -415,9 +412,13 @@ footer .descricao-nome {
 footer .titulacao {
 	font-family: 'Courier New', cursive !important;
 	font-size: 15px;
-	margin: 0;
 	padding-inline-start: 0px;
 }
+
+footer .titulacao p {
+	margin-top: -30px;
+}
+
 
 @media (max-width:740px){
 	footer .titulacao {
