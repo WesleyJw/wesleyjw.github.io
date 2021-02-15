@@ -231,8 +231,9 @@ body {
 	top: 22px
 }
 
+/*Mudando aqui*/
 header {
-	min-height: 423px;
+	min-height: 300px;
 	position: relative;
 	background-image: url("../imagens/slide_inicial.png");
 	background-position: top center;
@@ -273,7 +274,7 @@ header .logo {
 }
 
 header .logo img {
-	width: 89px;
+	width: 180px;
 	height: 80px
 }
 
@@ -336,32 +337,34 @@ header .links .menu-geral ul li a {
 	color: #fff
 }
 
+/*Editanto o tamanho do header*/
 header h1 {
 	clear: both;
-	margin: 200px auto 30px auto !important;
+	margin: 100px auto 10px auto !important;
 	border: 3px solid #fff;
 	padding: 20px;
 	display: table;
-	font-size: 45px
+	font-size: 35px
 }
 
 @media (max-width:440px) {
 	header h1 {
-		font-size: 45px;
-		font-size: 2.8125rem
+		font-size: 25px;
+		font-size: 1.563rem
 	}
 
 }
 
 header p {
 	text-transform: uppercase;
-	font-weight: 700
+	font-weight: 900;
+	font-size: 18px; 
 }
 
 @media (max-width:440px) {
 	header p {
-		font-size: 22px;
-		font-size: 1.375rem
+		font-size: 16px;
+		font-size: 1rem
 	}
 
 }
