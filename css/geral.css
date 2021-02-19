@@ -306,6 +306,10 @@ header .links nav, header .links .menu-geral {
 		width: 110px;
 		height: 50px
 	}
+	header {
+		min-height: 250px;
+	}
+
 }
 
 header .links nav ul li {
@@ -354,21 +358,17 @@ header h1 {
 	font-size: 35px
 }
 
-@media (max-width:440px) {
-	header h1 {
-		font-size: 25px;
-		font-size: 1.563rem
-	}
-
-}
-
 header p {
 	text-transform: uppercase;
 	font-weight: 900;
 	font-size: 18px; 
 }
 
-@media (max-width:440px) {
+@media (max-width:540px) {
+	header h1 {
+		font-size: 22px;
+		font-size: 1.375rem
+	}
 	header p {
 		font-size: 16px;
 		font-size: 1rem
