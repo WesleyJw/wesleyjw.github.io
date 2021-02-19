@@ -206,6 +206,19 @@ section.sobre .itens [class^="icone-"].icone-codigo {
 	font-size: 1.875rem
 }
 
+
+@media (max-width:540px) {
+	.textos {
+		margin-left: 2.66667%;
+	}
+	.textos p {
+		font-size: 23px;
+		font-size: 1.375rem;
+		margin-top: -10%;
+	}
+
+}
+
 .textos .botao {
 	display: table;
 	margin: 30px auto

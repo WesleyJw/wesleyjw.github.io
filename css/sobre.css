@@ -250,6 +250,17 @@ header p {
 	font-size: 1.875rem
 }
 
+@media (max-width:540px) {
+	header {
+		min-height: 250px;
+	}
+
+	header p {
+		font-size: 25px;
+		font-size: 1.563rem
+	}
+}
+
 .botao {
 	display: table;
 	margin: auto;

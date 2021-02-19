@@ -1095,6 +1095,17 @@ header p {
 	font-size: 18px;
 }
 
+@media (max-width:540px) {
+	header {
+		min-height: 250px;
+	}
+
+	header p {
+		font-size: 22px;
+		font-size: 1.375rem
+	}
+}
+
 .botao {
 	display: table;
 	margin: auto;
