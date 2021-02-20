@@ -186,10 +186,12 @@ section.sobre .itens [class^="icone-"].icone-codigo {
 	text-align: center
 }
 
+
+
 @media (min-width:768px) {
 	.textos {
 		float: left;
-		width: 66.66667%
+		width: 75%
 	}
 
 }
@@ -210,13 +212,94 @@ section.sobre .itens [class^="icone-"].icone-codigo {
 @media (max-width:540px) {
 	.textos {
 		margin-left: 2.66667%;
+		margin-top: -10%;
 	}
 	.textos p {
 		font-size: 23px;
 		font-size: 1.375rem;
-		margin-top: -10%;
 	}
 
+}
+
+.services h2 {
+    border-bottom: 2.5px #64f044 solid;
+}
+
+.services div h2 {
+    display: inline-block;
+    padding: 10px;
+    text-transform: uppercase;
+    font-size: 24px;
+    margin-bottom: 25px;
+    margin-right: 100%;
+    font-weight: 700;
+}
+
+.row {
+    margin: 0;
+
+}
+.row {
+    margin-right: -15px;
+    margin-left: -15px;
+}
+
+
+.services .icon {
+    padding: 0;
+}
+
+.col-xs-2 {
+    width: 16.66666667%;
+}
+
+.col-xs-1, .col-xs-10, .col-xs-11, .col-xs-12, .col-xs-2, .col-xs-3, .col-xs-4, .col-xs-5, .col-xs-6, .col-xs-7, .col-xs-8, .col-xs-9 {
+    float: left;
+}
+
+.col-lg-1, .col-lg-10, .col-lg-11, .col-lg-12, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8, .col-lg-9, .col-md-1, .col-md-10, .col-md-11, .col-md-12, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-sm-1, .col-sm-10, .col-sm-11, .col-sm-12, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, .col-sm-7, .col-sm-8, .col-sm-9, .col-xs-1, .col-xs-10, .col-xs-11, .col-xs-12, .col-xs-2, .col-xs-3, .col-xs-4, .col-xs-5, .col-xs-6, .col-xs-7, .col-xs-8, .col-xs-9 {
+    position: relative;
+    min-height: 1px;
+    padding-right: 1px;
+    padding-left: 15px;
+}
+
+.services img {
+    padding: 0;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 100%;
+    max-width: 70px;
+    margin: 70px auto auto auto;
+    display: block;
+}
+
+img {
+    vertical-align: middle;
+}
+img {
+    border: 0;
+}
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+
+.services a {
+    color:  #048f12;
+    font-weight: 500;
+}
+
+.services a:hover {
+    color: #64f044;
+    text-decoration: underline;
+}
+
+.services a {
+    background-color: transparent;
 }
 
 .textos .botao {
