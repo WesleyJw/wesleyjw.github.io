@@ -45,6 +45,11 @@
 	text-align: center
 }
 
+.container ul  li h2 {
+		font-size: 30px;
+		font-size: 1.875rem;
+}
+
 @media (min-width:768px) {
 	.textos {
 		float: left;
@@ -56,6 +61,22 @@
 @media (min-width:768px) {
 	.textos {
 		margin-left: 16.66667%
+	}
+
+}
+
+@media (max-width:540px) {
+	div .textos {
+		margin-left: 2.66667%;
+		margin-top: 1%;
+	}
+	div .textos p {
+		font-size: 23px;
+		font-size: 1.375rem;
+	}
+	.container ul  li h2 {
+		font-size: 23px;
+		font-size: 1.375rem;
 	}
 
 }
@@ -87,17 +108,13 @@
 	clear: both
 }
 
-@media (min-width:768px) {
-	.habilidades {
-		float: left;
-		width: 83.33333%
-	}
-
-}
-
-@media (min-width:768px) {
+@media (min-width:581px) {
 	.habilidades {
 		margin-left: 8.33333%
+	}
+	.habilidades li {
+		float: left;
+		width: 50%
 	}
 
 }
@@ -109,10 +126,17 @@
 	padding-right: 15px
 }
 
-@media (min-width:768px) {
+@media (max-width:580px) {
 	.habilidades li {
 		float: left;
 		width: 50%
+	}
+	.habilidades {
+		position: relative;
+		min-height: 1px;
+		padding-left: 2px;
+		padding-right: 2px;
+		margin-bottom: 40px
 	}
 
 }
@@ -126,20 +150,22 @@
 	font-size: 30px !important
 }
 
-.habilidades li h2 i.fa-html5 {
-	color: orange
-}
+@media (max-width:580px) {
+	.habilidades li {
+		float: left;
+		width: 50%
+	}
+	.habilidades {
+		position: relative;
+		min-height: 1px;
+		padding-left: 2px;
+		padding-right: 2px;
+		margin-bottom: 40px
+	}
+	.habilidades li h2 i {
+		font-size: 15px !important
+	}
 
-.habilidades li h2 i.fa-css3 {
-	color: #31b1e7
-}
-
-.habilidades li h2 i.fae-java {
-	color: #31b1e7
-}
-
-.habilidades li h2 i.fae-python {
-	color: #31b1e7
 }
 
 .habilidades li h2 i.r img {
