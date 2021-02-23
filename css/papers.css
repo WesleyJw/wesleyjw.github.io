@@ -1111,36 +1111,27 @@ header p {
     text-align: justify;
 }
 
-@media (max-width:991px) {
-	.container .artigos {
-		width: 90%;
-		margin-left: 5%
-	}
-
-	.container .artigos h3 {
-		font-size: 26px;
-		font-size: 1.625rem;
-		text-align: justify;
-		line-height: 1.5;
-		font-family: 'Aclonica', cursive !important
-	}
-
+.papers .container a {
+    color:  #048f12;
+    font-weight: 600;
 }
 
-@media (max-width:440px) {
-	.container .artigos {
-		width: 90%;
-		margin-left: 5%
-	}
+.papers .container a:hover {
+    color: #64f044;
+    text-decoration: underline;
+}
 
-	.container .artigos h2 {
-		font-size: 21px;
-		font-size: 1.3125rem;
-		text-align: justify;
-		line-height: 1.5;
-		font-family: 'Aclonica', cursive !important
-	}
+.papers .container a {
+    background-color: transparent;
+}
 
+.container .descricao p {
+	text-align: justify;
+	line-height: 1.5;
+	padding: 10px;
+	text-indent: 20px;
+	font-size: 20px;
+	font-size: 1.25rem
 }
 
 .container .descricao {
@@ -1161,28 +1152,18 @@ header p {
 	cursor: pointer
 }
 
-.container .descricao p {
-	text-align: justify;
-	line-height: 1.5;
-	padding: 10px;
-	text-indent: 20px;
-	font-size: 20px;
-	font-size: 1.25rem
-}
 
-
-
-@media (max-width:991px) {
-	.container .descricao {
-		width: 90%;
-		margin-left: 5%
+@media (min-width: 581px) and  (max-width:991px) {
+	.container .artigos {
+		width: 100%;
+		padding: 0px 10px 10px 10px;
+		margin-bottom: 20px;
+		cursor: pointer
 	}
 
-	.container .descricao h2 {
-		font-size: 26px;
-		font-size: 1.625rem;
-		text-align: justify;
-		line-height: 1.5;
+	.container .descricao {
+		width: 100%;
+		margin-left: 0%
 	}
 
 	.container .descricao p {
@@ -1196,23 +1177,31 @@ header p {
 
 }
 
-@media (max-width:991px) {
-	.container .descricao {
-		width: 90%;
-		margin-left: 5%
+@media (max-width:580px) {
+	.container .artigos {
+		width: 100%;
+		padding: 0px 5px 5px 5px;
+		margin-bottom: 20px;
+		cursor: pointer;
+		margin-left: 0%
 	}
 
-	.container .descricao h2 {
-		font-size: 24px;
-		font-size: 1.5rem;
+	.container .descricao {
+		width: 100%;
+		margin-left: 0%
+	}
+
+	.container  h4 {
+		font-size: 22px;
+		font-size: 1.375rem;
 		text-align: justify;
-		line-height: 1.5;
+		line-height: 1.2;
 	}
 
 	.container .descricao p {
 		text-align: justify;
 		line-height: 1.5;
-		padding: 5px;
+		padding: 10px;
 		text-indent: 15px;
 		font-size: 20px;
 		font-size: 1.25rem
