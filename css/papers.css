@@ -1033,13 +1033,6 @@
 	transition-delay: .21s
 }
 
-.textos {
-	position: relative;
-	min-height: 1px;
-	padding-left: 15px;
-	padding-right: 15px;
-	text-align: center
-}
 
 @media (min-width:768px) {
 	.textos {
@@ -1047,18 +1040,6 @@
 		width: 66.66667%
 	}
 
-}
-
-@media (min-width:768px) {
-	.textos {
-		margin-left: 16.66667%
-	}
-
-}
-
-.textos p {
-	font-size: 30px;
-	font-size: 1.875rem
 }
 
 .textos .botao {
@@ -1105,30 +1086,29 @@ header p {
 }
 
 .container .artigos {
-	width: 80%;
+	width: 100%;
 	padding: 0px 10px 10px 10px;
 	margin-bottom: 20px;
-	border: 4px solid #9ad15e;
-	background-color: #9ad15e;
-	background-image: -webkit-gradient(linear, 0deg, from(#d1f153), to(#9ad15e));
-	background-image: -webkit-linear-gradient(0deg, #d1f153, #9ad15e);
-	background-image: -moz-linear-gradient(0deg, #d1f153, #9ad15e);
-	background-image: -ms-linear-gradient(0deg, #d1f153, #9ad15e);
-	background-image: -o-linear-gradient(0deg, #d1f153, #9ad15e);
-	background-image: linear-gradient(0deg, #d1f153, #9ad15e);
-	filter: progid:DXImageTransform.Microsoft.gradient(GradientType=$angle, StartColorStr='#d1f153', EndColorStr='#9ad15e');
-	opacity: 0.9;
-	border-radius: 5px;
-	margin-left: 10%;
 	cursor: pointer
 }
 
-.container .artigos h2 {
-	font-size: 33px;
-	font-size: 2.0625rem;
-	text-align: justify;
-	line-height: 1.5;
-	font-family: 'Aclonica', cursive !important
+.container h2 {
+	border-bottom: 2.5px #64f044 solid;
+}
+
+
+.container  h2 {
+	display: inline-block;
+    padding: 10px;
+    text-transform: uppercase;
+    font-size: 24px;
+    margin-bottom: 25px;
+    font-weight: 700;
+}
+
+.container  h4 {
+    font-size: 16px;
+    text-align: justify;
 }
 
 @media (max-width:991px) {
@@ -1137,7 +1117,7 @@ header p {
 		margin-left: 5%
 	}
 
-	.container .artigos h2 {
+	.container .artigos h3 {
 		font-size: 26px;
 		font-size: 1.625rem;
 		text-align: justify;
@@ -1164,38 +1144,33 @@ header p {
 }
 
 .container .descricao {
-	width: 80%;
+	width: 100%;
 	padding: 0px 10px 10px 10px;
 	margin-bottom: 20px;
-	border: 4px solid #f64055;
-	background-color: #f5dea6;
-	background-image: -webkit-gradient(linear, 0deg, from(#b1eb7e), to(#f5dea6));
-	background-image: -webkit-linear-gradient(0deg, #b1eb7e, #f5dea6);
-	background-image: -moz-linear-gradient(0deg, #b1eb7e, #f5dea6);
-	background-image: -ms-linear-gradient(0deg, #b1eb7e, #f5dea6);
-	background-image: -o-linear-gradient(0deg, #b1eb7e, #f5dea6);
-	background-image: linear-gradient(0deg, #b1eb7e, #f5dea6);
-	filter: progid:DXImageTransform.Microsoft.gradient(GradientType=$angle, StartColorStr='#b1eb7e', EndColorStr='#f5dea6');
-	border-radius: 5px;
-	margin-left: 10%
-}
-
-.container .descricao h2 {
-	font-size: 30px;
-	font-size: 1.875rem;
-	text-align: justify;
-	line-height: 1.5;
-	font-family: 'Aclonica', cursive !important
+	border: 1px solid #9ad15e;
+	background-color: #9ad15e33;
+	background-image: -webkit-gradient(linear, 0deg, from(#d1f15333), to(#9ad15e33));
+	background-image: -webkit-linear-gradient(0deg, #d1f15333, #9ad15e33);
+	background-image: -moz-linear-gradient(0deg, #d1f15333, #9ad15e33);
+	background-image: -ms-linear-gradient(0deg, #d1f15333, #9ad15e33);
+	background-image: -o-linear-gradient(0deg, #d1f15333, #9ad15e33);
+	background-image: linear-gradient(0deg, #d1f15333, #9ad15e33);
+	filter: progid:DXImageTransform.Microsoft.gradient(GradientType=$angle, StartColorStr='#d1f153E6', EndColorStr='#9ad15eE6');
+	margin-left: 0%;
+	border-radius: 10px;
+	cursor: pointer
 }
 
 .container .descricao p {
 	text-align: justify;
 	line-height: 1.5;
-	padding: 20px;
-	text-indent: 30px;
-	font-size: 25px;
-	font-size: 1.5625rem
+	padding: 10px;
+	text-indent: 20px;
+	font-size: 20px;
+	font-size: 1.25rem
 }
+
+
 
 @media (max-width:991px) {
 	.container .descricao {
@@ -1208,7 +1183,6 @@ header p {
 		font-size: 1.625rem;
 		text-align: justify;
 		line-height: 1.5;
-		font-family: 'Aclonica', cursive !important
 	}
 
 	.container .descricao p {
@@ -1233,7 +1207,6 @@ header p {
 		font-size: 1.5rem;
 		text-align: justify;
 		line-height: 1.5;
-		font-family: 'Aclonica', cursive !important
 	}
 
 	.container .descricao p {
